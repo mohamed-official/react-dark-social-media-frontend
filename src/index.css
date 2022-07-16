@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-icon {
+    @apply text-white ml-2 lg:ml-5 p-2 cursor-pointer hover:bg-blue-400 rounded-md transition-2
+  }
+
+  .mobile-nav-icon {
+    @apply nav-icon flex items-center ml-0 text-gray-400 hover:bg-transparent hover:text-white
+  }
+
+  .active-nav-icon {
+    @apply bg-blue-600
+  }
+
+  .navbar-dropdown-item {
+    @apply text-white px-4 py-2 block hover:bg-gray-800 transition-2
+  }
+}
+
+* {
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  background: #334155;
+  height: 2000px;
+}
+
+.transition-2 {
+  transition: .2s;
+}
